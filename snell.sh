@@ -34,7 +34,7 @@ fi
 Download_snell(){
 	mkdir /root/snell
 	cd /root/snell
-    wget -N --no-check-certificate https://github.com/surge-networks/snell/releases/download/v1.1.1/snell-server-v1.1.1-linux-amd64.zip
+    wget -N --no-check-certificate https://github.com/surge-networks/snell/releases/download/v2.0.4/snell-server-v2.0.4-linux-amd64.zip
     unzip snell*.zip
     mv snell-server snell
     rm -rf snell*.zip
@@ -192,7 +192,7 @@ Change_snell_info(){
 Update_Shell(){
 	rm -rf /root/snell.sh
 	cd /root/
-	wget --no-check-certificate -O snell.sh https://raw.githubusercontent.com/Newlearner365/sh/master/snell.sh
+	wget --no-check-certificate -O snell.sh https://raw.githubusercontent.com/Benny-F/sh/master/snell.sh
 	chmod +x snell.sh
 	echo "snell.sh 已更新至最新版本"
 	./snell.sh
